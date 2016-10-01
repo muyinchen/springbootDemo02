@@ -20,9 +20,11 @@ public class WebInitializer implements WebApplicationInitializer {
         ctx.register(MyMvcConfig.class);
         ctx.setServletContext(servletContext);
 
+
         ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher", new DispatcherServlet(ctx));
         servlet.addMapping("/");
         servlet.setLoadOnStartup(1);
+        //开启异步方法支持
         servlet.setAsyncSupported(true);
     }
 }
