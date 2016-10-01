@@ -1,4 +1,4 @@
-package com.zhiqiu.web.ch4_3;
+package com.zhiqiu.web.hcontroller;
 
 import com.zhiqiu.domain.DemoObj;
 import org.springframework.stereotype.Controller;
