@@ -63,6 +63,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
        registry.addViewController("/index").setViewName("/index");
         registry.addViewController("/onupload").setViewName("/upload");
         registry.addViewController("/converter").setViewName("/converter");
+        registry.addViewController("/sse").setViewName("/sse");
     }
 
     @Override //通过此设置可以不忽略路径中的. 比如http：//abc/bc.cc
